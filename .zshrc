@@ -1,3 +1,6 @@
+# Export locale settings
+export LANG="en_GB.UTF-8"
+#export LC_ALL="en_GB.UTF-8"
 # Add java path
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
@@ -13,6 +16,8 @@ export PATH=$HOME/Library/Python/3.8/bin:$PATH
 export LSCOLORS=GxFxCxDxBDegedabagaced
 alias ls='ls -F'
 alias ll='ls -l'
+alias la='ls -a'
+alias l='ls'
 export CLICOLOR=1
 alias grep='grep --color=auto'
 
@@ -26,8 +31,6 @@ setopt PROMPT_SUBST
 PROMPT='%F{green}${PWD/#$HOME/~}%f '
 PROMPT+='%F{cyan}${vcs_info_msg_0_}%f
 %F{green}>%f '
-#export PS1='%F{green}%15<...<%~%f%<< ${vcs_info_msg_0_} >> '
-#export PS1='%F{green}%2~%f %# '
 
 # Add ruby path to PATH, needed by jekyll
 export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
@@ -47,3 +50,5 @@ export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 
 alias python=python3
+# Added bin path for packages installed by npm
+export PATH=$HOME/.npm-global/bin:$PATH

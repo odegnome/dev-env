@@ -1,0 +1,3 @@
+[submodule "nvim-setup"]
+	path = nvim-setup
+	url = git@github.com:odegnome/nvim-setup.git
